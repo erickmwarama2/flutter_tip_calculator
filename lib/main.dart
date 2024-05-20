@@ -105,11 +105,13 @@ class _BillSpitterState extends State<BillSpitter> {
                             ),
                           ),
                         ),
-                        Text("$_personCounter", style: const TextStyle(
-                          color: Colors.purple,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 15
-                        ),),
+                        Text(
+                          "$_personCounter",
+                          style: const TextStyle(
+                              color: Colors.purple,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15),
+                        ),
                         InkWell(
                           onTap: () {
                             setState(() {
@@ -136,6 +138,20 @@ class _BillSpitterState extends State<BillSpitter> {
                           ),
                         )
                       ],
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Tip",
+                      style: TextStyle(color: Colors.grey.shade700),
+                    ),
+                    const Text(
+                      "\$34",
+                      style: TextStyle(
+                          color: Colors.purple, fontWeight: FontWeight.bold),
                     )
                   ],
                 )
